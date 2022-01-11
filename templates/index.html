@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Machine Learning Development</title>
+</head>
+
+<body>
+    <div class = "py-12 flex flex-col justify-center items-center text-center" >
+        <h1 class = "font-bold" >Machine Learning Development</h1>
+        <p>We try to make machine learning</p><br>
+        <h2 class = "font-bold">Predict Your Salary</h2>
+        <form action = "\" method="POST">
+            <h5>Input your predictions year(s) : </h5>
+            <input type="number" name="year" placeholder="year" class="border-solid border-2 border-black py-1 px-2">
+            <input type="submit" class="border-solid py-1 px-2">
+        </form>
+    </div>
+    <div class = "py-2 flex flex-col justify-center items-center text-center">
+        <h2>Salary Predictions : </h2>
+        <p class = "border-solid border-2 border-black py-1 px-2">{{p}}</p>
+    </div>
+
+</body>
+</html>
