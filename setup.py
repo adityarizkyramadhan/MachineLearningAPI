@@ -1,9 +1,9 @@
 from flask import Flask,render_template,request
 import model_salary as m 
 
-app = Flask(__name__,template_folder="templates")
+setup = Flask(__name__,template_folder="templates")
 
-@app.route('/',methods=['GET','POST'])
+@setup.route('/',methods=['GET','POST'])
 def index():
     ps = 0
     if request.method == 'POST' :
